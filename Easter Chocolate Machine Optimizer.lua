@@ -20,7 +20,7 @@ Road Map: Complete 2 station optimization
           Refactoring
 
 -Bugs-
-Known Issues: 
+Known Issues: There is a chance to get stuck on a menu choice *being investigated*
 --]]
 
 ---------------WORK SPACE---------------
