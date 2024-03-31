@@ -20,7 +20,10 @@ Road Map: Complete 2 station optimization
           Refactoring
 
 -Bugs-
-Known Issues: There is a chance to get stuck on a menu choice *being investigated*
+Known Issues:
+
+-Resolved-
+Bug Fix: There is a chance to get stuck on a menu choice [increased sleep time]
 --]]
 
 ---------------WORK SPACE---------------
@@ -298,7 +301,7 @@ local function assignPlayerMixingInstruction()
             API.RandomSleep2(300,100,100)
             setStation(mixingStationID)
             waitUntilTileReached()
-            API.RandomSleep2(700,500,700)
+            API.RandomSleep2(1000,700,1000)
             --print("Debug_CurMixingStationInstruction: " .. curMixingStationInstruction) --debug
             setProduction(curMixingStationInstruction)
         end
@@ -344,7 +347,7 @@ local function assignPlayerMouldingInstruction()
             API.RandomSleep2(300,100,100)
             setStation(mouldingStationID)
             waitUntilTileReached()
-            API.RandomSleep2(700,500,700)
+            API.RandomSleep2(1000,700,1000)
             --print("Debug_CurMouldingStationInstruction: " .. curMouldingStationInstruction) --debug
             setProduction(curMouldingStationInstruction)
         end
@@ -390,7 +393,7 @@ local function assignPlayerFoilingInstruction()
             API.RandomSleep2(300,100,300)
             setStation(foilingStationID)
             waitUntilTileReached()
-            API.RandomSleep2(700,500,700)
+            API.RandomSleep2(1000,700,1000)
             --print("Debug_CurMouldingStationInstruction: " .. curMouldingStationInstruction) --debug
             setProduction(curFoilingStationInstruction)
         end
